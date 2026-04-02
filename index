@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="nl">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Talisha’s Hair Salon - Jouw haar, mijn passie</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#924751",
+                        "on-primary": "#ffffff",
+                        "background": "#f9f9ff",
+                        "surface": "#f9f9ff",
+                        "on-background": "#181c23",
+                        "primary-container": "#ea8f99",
+                        "on-primary-container": "#6a2732",
+                        "outline": "#867273",
+                        "surface-variant": "#dfe2ed",
+                    },
+                    fontFamily: {
+                        "headline": ["Noto Serif"],
+                        "body": ["Plus Jakarta Sans"],
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .glass-nav {
+            background: rgba(249, 249, 255, 0.8);
+            backdrop-filter: blur(20px);
+        }
+
+        .boutique-shadow {
+            box-shadow: 0px 10px 30px rgba(83, 67, 68, 0.08);
+        }
+
+        .keratin-gradient {
+            background: linear-gradient(135deg, #924751 0%, #ea8f99 100%);
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-background font-body">
+
+    <nav class="fixed top-0 w-full z-50 glass-nav border-b border-outline/10">
+        <div class="flex justify-between items-center w-full px-8 py-5 max-w-7xl mx-auto">
+            <a class="text-2xl font-serif italic text-primary" href="#">Talisha’s Hair Salon</a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a class="text-on-background hover:text-primary transition-colors font-medium" href="#hero">Home</a>
+                <a class="text-on-background hover:text-primary transition-colors font-medium" href="#over-mij">Over Mij</a>
+                <a class="text-on-background hover:text-primary transition-colors font-medium" href="#producten">Producten</a>
+                <a class="text-on-background hover:text-primary transition-colors font-medium" href="#tarieven">Tarieven</a>
+                <a class="text-on-background hover:text-primary transition-colors font-medium" href="#contact">Contact</a>
+            </div>
+            <a class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-semibold hover:opacity-90 transition-all boutique-shadow" href="https://wa.me/31681949072">
+                Afspraak Maken
+            </a>
+        </div>
+    </nav>
+
+    <section class="relative pt-32 pb-20 md:pt-48 md:pb-40 overflow-hidden" id="hero">
+        <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div class="z-10">
+                <span class="text-primary font-bold uppercase tracking-widest text-sm mb-4 block">Exclusieve Kapperservaring</span>
+                <h1 class="text-5xl md:text-7xl font-headline font-bold text-on-background leading-tight mb-6">
+                    Jouw haar, mijn passie.
+                </h1>
+                <p class="text-lg text-slate-600 max-w-lg mb-10 leading-relaxed">
+                    Welkom bij Talisha’s Hair Salon in Monster. Of je nu kiest voor een nieuwe look of een frisse styling, bij mij is jouw haar in goede handen.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a class="keratin-gradient text-on-primary px-10 py-4 rounded-full font-bold text-center boutique-shadow hover:scale-105 transition-transform" href="https://wa.me/31681949072">
+                        Maak een afspraak
+                    </a>
+                    <a class="bg-white text-primary px-10 py-4 rounded-full font-bold text-center border border-primary/20 hover:bg-slate-50 transition-colors" href="#tarieven">
+                        Bekijk tarieven
+                    </a>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute -top-10 -right-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
+                <div class="relative rounded-2xl overflow-hidden boutique-shadow transform rotate-2">
+                    <img alt="Salon interieur" class="w-full h-[500px] object-cover bg-slate-200" src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=1000" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-white" id="over-mij">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+                <div class="relative">
+                    <img alt="Talisha Koot" class="rounded-2xl boutique-shadow w-full h-[500px] object-cover bg-slate-100" src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&q=80&w=1000" />
+                    <div class="absolute -bottom-6 -right-6 bg-primary p-6 rounded-lg shadow-xl text-on-primary">
+                        <span class="block font-headline italic text-2xl">Sinds 2020</span>
+                        <span class="text-sm uppercase tracking-widest">Eigen salon aan huis</span>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-4xl font-headline font-bold mb-8">Over Talisha</h2>
+                    <p class="text-lg text-slate-600 mb-6">
+                        Mijn naam is Talisha Koot, eigenaresse van Talisha’s Hair Salon. Na het behalen van mijn diploma en jarenlange ervaring, is mijn droom van een eigen salon aan huis werkelijkheid geworden.
+                    </p>
+                    <p class="text-lg text-slate-600 mb-8">
+                        Kleuren, knippen, folies of even lekker föhnen; alles is mogelijk. Ik knip zowel dames als heren en kinderen met veel plezier en persoonlijke aandacht.
+                    </p>
+                    <a class="text-primary font-bold border-b-2 border-primary pb-1 hover:opacity-70 transition-opacity" href="#contact">Neem contact op</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-background" id="tarieven">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl font-headline font-bold mb-4">Tarieven</h2>
+                <p class="text-primary font-medium italic">Prijslijst vanaf oktober 2025</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl boutique-shadow">
+                    <h3 class="text-2xl font-headline font-bold mb-6 flex items-center gap-2">
+                        <span class="material-symbols-outlined">man</span> Heren
+                    </h3>
+                    <div class="flex justify-between items-center py-3 border-b">
+                        <span>Wassen & Knippen</span>
+                        <span class="font-bold">€ 23,00</span>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-2xl boutique-shadow border-t-4 border-primary">
+                    <h3 class="text-2xl font-headline font-bold mb-6 flex items-center gap-2">
+                        <span class="material-symbols-outlined">woman</span> Dames
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span>Knippen & Drogen</span>
+                            <span class="font-bold">v.a. € 25,00</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span>Knippen & Föhnen</span>
+                            <span class="font-bold">v.a. € 31,00</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span>Kleuren / Uitgroei</span>
+                            <span class="font-bold">v.a. € 38,50</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span>Balayage</span>
+                            <span class="font-bold">v.a. € 70,00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-2xl boutique-shadow">
+                    <h3 class="text-2xl font-headline font-bold mb-6 flex items-center gap-2">
+                        <span class="material-symbols-outlined">child_care</span> Kinderen
+                    </h3>
+                    <div class="flex justify-between items-center py-3 border-b">
+                        <span>Tot 4 jaar</span>
+                        <span class="font-bold">€ 19,00</span>
+                    </div>
+                    <div class="flex justify-between items-center py-3 border-b">
+                        <span>4 tot 12 jaar</span>
+                        <span class="font-bold">€ 20,50</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-white pt-20 pb-10 border-t" id="contact">
+        <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
+            <div>
+                <h3 class="text-xl font-headline font-bold mb-6">Contact</h3>
+                <p class="mb-2">Dokter van de Brinkstraat 24</p>
+                <p class="mb-4">2681 Monster</p>
+                <p class="text-primary font-bold">06 81 94 90 72</p>
+                <p class="text-slate-500">talishahairsalon@hotmail.com</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-headline font-bold mb-6">Openingstijden</h3>
+                <ul class="space-y-2 text-slate-600">
+                    <li class="flex justify-between"><span>Maandag</span> <span>09:00 - 17:30</span></li>
+                    <li class="flex justify-between"><span>Dinsdag</span> <span>09:00 - 21:00</span></li>
+                    <li class="flex justify-between"><span>Donderdag</span> <span>09:00 - 21:00</span></li>
+                    <li class="flex justify-between italic"><span>Zaterdag (om de week)</span> <span>08:30 - 12:30</span></li>
+                </ul>
+            </div>
+            <div class="text-center md:text-right">
+                <h3 class="text-xl font-headline font-bold mb-6">Volg Mij</h3>
+                <div class="flex justify-center md:justify-end gap-4">
+                    <a href="#" class="text-primary hover:scale-110 transition-transform text-2xl">FB</a>
+                    <a href="#" class="text-primary hover:scale-110 transition-transform text-2xl">IG</a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-slate-400 text-sm border-t pt-8">
+            <p>&copy; 2026 Talisha’s Hair Salon. Alle rechten voorbehouden.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/31681949072" class="fixed bottom-8 right-8 keratin-gradient text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform z-50 flex items-center justify-center">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"></path>
+        </svg>
+    </a>
+</body>
+
+</html>
