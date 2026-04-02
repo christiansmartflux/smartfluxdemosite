@@ -1,0 +1,10 @@
+{
+  "name": "smartfluxdemosite",
+  "version": "1.0.0",
+  "description": "Demo site for SmartFlux",
+  "scripts": {
+    "start": "npx http-server -p 3000"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
