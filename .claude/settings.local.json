@@ -3,7 +3,10 @@
     "allow": [
       "Bash(npm start:*)",
       "Bash(npx http-server:*)",
-      "Bash(firebase --version)"
+      "Bash(firebase --version)",
+      "Bash(firebase login:*)",
+      "Bash(firebase projects:list)",
+      "Bash(firebase deploy:*)"
     ]
   }
 }
